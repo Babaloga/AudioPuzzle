@@ -1,10 +1,35 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+# WHO HAS DONE THIS MURDER?!
 
-layout: home
----
+<select name="Who Murder" id="whodunnit">
+    <option value="A">Suspect A</option>
+    <option value="B">Suspect B</option>
+    <option value="C">Suspect C</option>
+    <option value="D">Suspect D</option>
+</select>
 
-# Testing Website how to do how to do how to do
+ <button onclick="checkResults()">
+    Check
+ </button> 
 
-how to do how to do how to do how to do
+<div id="result">
+</div>
+
+<script>
+var whodunnit = document.getElementById("whodunnit");
+
+var selectedSuspect = "";
+var guiltySuspect = "C";
+whodunnit.addEventListener('change', function(){
+      selectedSuspect = this.value;
+    });
+
+function checkResults(){
+    if(selectedSuspect == guiltySuspect){
+        document.getElementById("result").innerHTML = "CORRECT"
+    }
+    else{
+        document.getElementById("result").innerHTML = "nup"
+    }
+}
+
+</script>
