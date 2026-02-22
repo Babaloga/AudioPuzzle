@@ -23,3 +23,17 @@ div h2 {
   background-color: #440607;
   color: #fcd86f;
 }
+
+markdown-body h2 {
+  font-family: footlight;
+  font-size: xx-large;
+  background-color: #440607;
+  color: #fcd86f;
+}
+
+markdown-body div {
+  font-family: footlight;
+  font-size: x-large;
+  background-color: #440607;
+  color: white;
+}
