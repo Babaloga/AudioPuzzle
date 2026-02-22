@@ -1,0 +1,18 @@
+@font-face {
+  font-family: footlight;
+  src: url("Footlight MT Light Regular.ttf");
+}
+
+body {
+  font-family: footlight;
+  font-size: xx-large;
+  background-color: #440607;
+  color: white;
+}
+
+div {
+  font-family: footlight;
+  font-size: xx-large;
+  background-color: #440607;
+  color: white;
+}
