@@ -17,7 +17,7 @@ div {
   color: white;
 }
 
-h2 {
+div h2 {
   font-family: footlight;
   font-size: xx-large;
   background-color: #440607;
