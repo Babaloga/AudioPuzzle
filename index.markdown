@@ -23,6 +23,22 @@ function checkResults(){
     if(document.getElementById("question_manner").value == answer4){
         correctResults++;
     }
+
+    if(document.getElementById("question_pet").value == ""){
+        correctResults = -1;
+    }
+
+    if(document.getElementById("question_people").value == ""){
+        correctResults = -1;
+    }
+
+    if(document.getElementById("question_cause").value == ""){
+        correctResults = -1;
+    }
+    
+    if(document.getElementById("question_manner").value == ""){
+        correctResults = -1;
+    }
     
     if(correctResults >= 4){
         document.getElementById("content").innerHTML = "<h1>Nice Work, Detective!<br/>You've Solved the Case!</h1>"
@@ -39,13 +55,16 @@ function checkResults(){
     else if (correctResults == 0){
         document.getElementById("result").innerHTML = "<h2>You didn't even get the pet question?</h2>"
     }
+        else if (correctResults == -1){
+        document.getElementById("result").innerHTML = "<h2>You need to answer every question before you can get feedback.</h2>"
+    }
 }
 
 </script>
 
 
 <div id="content">
-<h2>What kind of pet did the victim have?</h2>
+<h3>What kind of pet did the victim have?</h3>
 <select name="What kind of pet did the victim have?" id="question_pet">
     <option value="">-</option>
     <option value="A">Cat</option>
@@ -54,7 +73,7 @@ function checkResults(){
     <option value="D">Hyacinth Macaw</option>
 </select><br/>
 
-<h2>Including the victim, how many people were in the apartment at the time of death?</h2>
+<h3>Including the victim, how many people were in the apartment at the time of death?</h3>
 <select name="Including the victim, how many people were in the apartment at the time of death?" id="question_people">
     <option value="">-</option>
     <option value="A">None</option>
@@ -63,7 +82,7 @@ function checkResults(){
     <option value="D">3</option>
 </select><br/>
 
-<h2>What was the cause of death?</h2>
+<h3>What was the cause of death?</h3>
 <select name="What was the cause of death?" id="question_cause">
     <option value="">-</option>
     <option value="A">Blood Loss</option>
@@ -72,7 +91,7 @@ function checkResults(){
     <option value="D">Heart Attack</option>
 </select><br/>
 
-<h2>What was the manner of death?</h2>
+<h3>What was the manner of death?</h3>
 <select name="What was the manner of death?" id="question_manner">
     <option value="">-</option>
     <option value="A">Homicide</option>
