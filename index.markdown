@@ -64,6 +64,15 @@ function checkResults(){
 
 
 <div id="content">
+
+<h1>Listen to the Audio</h1>
+
+<audio controls>
+  <source src="bedroom murder mystery.mp3" type="audio/mpeg">
+</audio> 
+
+<h1>Then Answer the Questions</h1>
+
 <h3>What kind of pet did the victim have?</h3>
 <select name="What kind of pet did the victim have?" id="question_pet">
     <option value="">-</option>
