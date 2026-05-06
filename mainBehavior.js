@@ -83,7 +83,13 @@ function displayQuestions()
         questionContent = questions4Address;
     }
     else if (functionsPhase == 5){
-        questionContent = '<h1>Congratulations, Detective</h1>';
+        questionContent = '<h1>Congratulations, Detective</h1>\
+        <b>Solution:</b><br/>\
+For weeks, the cast and crew of “To New Beginnings” have been grumbling among themselves about their Producer, the uncultured and profit-driven Chazworth. One individual, however, decided that kvetching in the dressing room wasn\’t enough: Chazworth needed to go. But who? And how?\
+<br/><br/>\
+The issues caused by Chazworth’s cost-saving measures, such as tool shortages and broken equipment, were well known by everyone. In particular, the recently-hired Lighting Assistant had finally run out of patience and publicly informed Chaz that he’d have to deal with the lights himself the next time they broke. This gave the murderer a perfect opportunity: sabotage one of the faulty lights and soon Chaz would be up on the catwalk alone, while everyone else was distracted with the production. Best of all, the Lighting Assistant would be the obvious suspect.\
+<br/><br/>\
+Just before a climactic scene at the end of the second act, the Sound Engineer told the crew he was going for a smoke break, but then snuck up to the catwalk with a wrench he stole from the props department. He waited in the shadows until the Producer arrived, then muffled his mic before hitting him in the head with a wrench. To cover his tracks, the Stage Manager made sure to check in for his final cue as if nothing unusual had happened. It was the perfect crime…or it would have been, if not for your detective work.';
     }
 
     document.getElementById("questions").innerHTML = questionContent;
