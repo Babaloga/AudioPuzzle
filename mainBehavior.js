@@ -1,13 +1,16 @@
 var bookletPage = 0;
 var functionsPhase = 0;
 
-const page0Address = "";
-const page1Address = "";
-const page2Address = "";
-const page3Address = "";
+const page0Address = "media\\page1.png";
+const page1Address = "media\\page2.png";
+const page2Address = "media\\page3.png";
+const page3Address = "media\\page4.png";
+const page4Address = "media\\page5.png";
+const page5Address = "media\\page6.png";
 
 window.addEventListener("load", (event) => {
   displayQuestions(); 
+  displayBookletImage();
 });
 
 function displayBookletImage()
@@ -22,13 +25,24 @@ function displayBookletImage()
     else if (bookletPage == 3){
         imageAddress = page3Address;
     }
+    else if (bookletPage == 4){
+        imageAddress = page4Address;
+    }
+    else if (bookletPage == 5){
+        imageAddress = page5Address;
+    }
 
     document.getElementById("booklet").src = imageAddress;
 }
 
 function incrementBookletPage(){
-    if(bookletPage < 3) bookletPage++;
-    else bookletPage = 0;
+    if(bookletPage < 5) bookletPage++;
+    displayBookletImage();
+}
+
+function decrementBookletPage(){
+    if(bookletPage > 0) bookletPage--;
+    displayBookletImage();
 }
 
 function displayQuestions()
