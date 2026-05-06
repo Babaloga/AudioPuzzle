@@ -17,6 +17,11 @@ div {
   color: white;
 }
 
+.markdown-body img
+{
+  background-color: #0000;
+}
+
 div h2 {
   font-family: footlight;
   font-size: xx-large;
@@ -24,16 +29,38 @@ div h2 {
   color: #fcd86f;
 }
 
-markdown-body h2 {
+.markdown-body h2 {
   font-family: footlight;
   font-size: xx-large;
   background-color: #440607;
   color: #fcd86f;
 }
 
-markdown-body div {
+.markdown-body div {
   font-family: footlight;
   font-size: x-large;
   background-color: #440607;
   color: white;
 }
+
+ .markdown-body input[type='radio'] { 
+     transform: scale(2);
+     margin-right: 0.5em;
+ } 
+
+  .markdown-body input[type='checkbox'] { 
+     transform: scale(2);
+     margin-right: 0.5em;
+ } 
+
+   .markdown-body #button-container{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ } 
+
+ .markdown-body audio
+ {
+      display: flex;
+      flex-grow: 1;
+ }

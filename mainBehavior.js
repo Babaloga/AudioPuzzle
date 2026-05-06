@@ -9,9 +9,29 @@ const page4Address = "media\\page5.png";
 const page5Address = "media\\page6.png";
 
 window.addEventListener("load", (event) => {
-  displayQuestions(); 
-  displayBookletImage();
+    displayQuestions(); 
+    displayBookletImage();
 });
+
+function handleAudio(){
+    document.getElementById("audio0").hidden = false;
+    
+    if(functionsPhase >= 2)
+    {
+        document.getElementById("audio1").hidden = false;
+    }
+    else{
+        document.getElementById("audio1").hidden = true;
+    }
+
+    if(functionsPhase >= 3)
+    {
+        document.getElementById("audio2").hidden = false;
+    }
+        else{
+        document.getElementById("audio2").hidden = true;
+    }
+}
 
 function displayBookletImage()
 {
@@ -47,6 +67,8 @@ function decrementBookletPage(){
 
 function displayQuestions()
 {
+    handleAudio();
+
     var questionContent = questions0Address;
     if(functionsPhase == 1){
         questionContent = questions1Address;
