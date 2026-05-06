@@ -13,6 +13,16 @@ window.addEventListener("load", (event) => {
     displayBookletImage();
 });
 
+function playClick() {
+var audio = document.getElementById("click");
+audio.play();
+}
+
+function playChime() {
+var audio = document.getElementById("chime");
+audio.play();
+}
+
 function handleAudio(){
     document.getElementById("audio0").hidden = false;
     
@@ -102,13 +112,18 @@ function checkAnswers()
         if(!document.querySelector('input[name="Where is this microphone located?"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
 
         if(document.querySelector('input[name="Where is this microphone located?"]:checked').value == "G")
         {
             functionsPhase = 1;
+            playChime();
             displayQuestions(); 
+        }
+        else{
+            playClick();
         }
     }
     else if(functionsPhase == 1){
@@ -117,16 +132,19 @@ function checkAnswers()
         if(!document.querySelector('input[name="Who is carrying this microphone?"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
         if(!document.querySelector('input[name="Who died?"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
         if(!document.querySelector('input[name="Where did the death occur?"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
 
@@ -147,11 +165,13 @@ function checkAnswers()
         {
             document.getElementById("feedback").innerHTML = "";
             functionsPhase = 2;
+            playChime();
             displayQuestions();
         }
         else
         {
             document.getElementById("feedback").innerHTML = correct + " Correct";
+            playClick();
         }
     }
     else if (functionsPhase == 2){
@@ -160,18 +180,21 @@ function checkAnswers()
         if(!document.querySelector('input[name="Where is Mic 2 located?"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
         
         if(document.querySelectorAll('input[name="Who is in the room at the beginning of the scene?"]:checked').length < 1)
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
 
         if(document.querySelectorAll('input[name="Who is in the room at the end of the scene?"]:checked').length < 1)
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
 
@@ -226,11 +249,13 @@ function checkAnswers()
         {
             document.getElementById("feedback").innerHTML = "";
             functionsPhase = 3;
+            playChime();
             displayQuestions();
         }
         else
         {
             document.getElementById("feedback").innerHTML = correct + " Correct";
+            playClick();
         }
     }
     else if (functionsPhase == 3){
@@ -239,18 +264,21 @@ function checkAnswers()
         if(!document.querySelector('input[name="Where is Mic 3 located?"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
 
         if(document.querySelectorAll('input[name="What was the cause of death?"]:checked').length < 1)
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
 
         if(!document.querySelector('input[name="How many people have been on the catwalk?"]').value)
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
 
@@ -273,11 +301,13 @@ function checkAnswers()
         {
             document.getElementById("feedback").innerHTML = "";
             functionsPhase = 4;
+            playChime();
             displayQuestions();
         }
         else
         {
             document.getElementById("feedback").innerHTML = correct + " Correct";
+            playClick();
         }
     }
     else if (functionsPhase == 4){
@@ -286,21 +316,25 @@ function checkAnswers()
         if(!document.querySelector('input[name="lighting assistant"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
         if(!document.querySelector('input[name="stage manager"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
         if(!document.querySelector('input[name="understudy"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
         if(!document.querySelector('input[name="sound designer"]:checked'))
         {
             document.getElementById("feedback").innerHTML = "You must give an answer to each question.";
+            playClick();
             return;
         }
 
@@ -328,11 +362,13 @@ function checkAnswers()
         {
             document.getElementById("feedback").innerHTML = "";
             functionsPhase = 5;
+            playChime();
             displayQuestions();
         }
         else
         {
             document.getElementById("feedback").innerHTML = correct + " Correct";
+            playClick();
         }
     }
 }

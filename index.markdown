@@ -2,6 +2,8 @@
 <script type="text/javascript" src="questionContent.js"></script>
 <script type="text/javascript" src="mainBehavior.js"></script>
 <div id="content">
+    <audio id="chime" src="media\chime.wav"></audio>
+    <audio id="click" src="media\click.wav"></audio>
     <img id="booklet" src="media\\page1.png"/>
     <div id="button-container">
         <button onClick="decrementBookletPage()"><<</button>
