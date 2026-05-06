@@ -33,4 +33,23 @@
     <div id="feedback"></div>
     <button onClick="checkAnswers()">Check</button>
 </div>
-
+<br/>
+**The Lost Recordings team is:**<br/>
+George Eltzroth<br/>
+Hansong Li<br/>
+Finlay Logan<br/>
+Maggie Wang<br/>
+Shreesha Yelameli<br/>
+{: style="text-align: center;"}	
+Art and Layout: Maggie
+{: style="text-align: center;"}	
+Audio: George, Hansong, Shreesha
+{: style="text-align: center;"}	
+Game design: George, Hansong, Finlay, Maggie, Shreesha
+{: style="text-align: center;"}	
+Writing: Finlay, Shreesha
+{: style="text-align: center;"}	
+Website: George
+{: style="text-align: center;"}	
+Thank you to Mars So for additional voice acting!
+{: style="text-align: center;"}	
